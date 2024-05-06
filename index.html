@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Title</title>
+
+    <style>
+        .navbar {
+            height: 100px;
+        }
+        .dl {
+            padding-top: 0;
+        }
+        .login {
+            color: white;
+            text-decoration: none;
+            vertical-align: top;
+            font-size: 12px;
+            padding-top: 0;
+        }
+        span {
+            color: white;
+            text-decoration: none;
+            vertical-align: top;
+            font-size: 12px;
+            padding-top: 0;
+        }
+        .dropdown-toggle {
+            color: white;
+            text-decoration: none;
+            vertical-align: top;
+            font-size: 12px;
+            padding-top: 0;
+        }
+        .main {
+            background-image: url("imgs/new_login_bg_strong_mask.jpg");
+            height: 100vh;
+        }
+        form {
+            margin-top: 40px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+            background-color: #1a1d20;
+        }
+        label {
+            margin-top: 0;
+        }
+        input {
+            background-color: #2b3035;
+            width: 100%;
+            height: 40px;
+            border-color: #2b3035;
+            color: white;
+        }
+        .loginBtn {
+            width: 100%;
+            margin-left: 70px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container h-100">
+        <a class="navbar-brand" href="#">
+            <img src="imgs/logo_steam.svg" height="50" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-dark h-100" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">商店</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">社群</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">關於</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">客服中心</a>
+                </li>
+            </ul>
+            <div class="nave-item h-100 mt-0 align-text-top">
+                <button class="dl btn mt-0">
+                    <img src="imgs/Screenshot%202024-05-06%20at%2023-28-44%20登入.png">
+                </button>
+                <a class="login" href="#">登入</a>
+                <span class="mx-2"> | </span>
+                <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    語言
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#" style="color:white">中文</a></li>
+                    <li><a class="dropdown-item" href="#" style="color:white">中文</a></li>
+                    <li><a class="dropdown-item" href="#" style="color:white">中文</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="main">
+    <div class="container-fluid h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="" style="width: 700px">
+                <h2 style="color: white">登入</h2>
+                <div class="loginFrom">
+                    <form class="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8">
+                                    <p style="color: #54a5d4; margin-bottom: 0; font-size: 12px">以帳戶名稱登入</p>
+                                    <label style="width: 100%" >
+                                        <input type="text" name="account">
+                                    </label>
+                                    <p style="color: white; margin-top: 13px; margin-bottom: 0; font-size: 12px">密碼</p>
+                                    <label style="width: 100%">
+                                        <input type="password" name="password">
+                                    </label>
+                                    <a type="submit" class="loginBtn" href="#">
+                                        <img src="imgs/Screenshot%202024-05-07%20at%2000-34-36%20登入.png" style="margin-top: 50px">
+                                    </a>
+                                    <a href="#" style="color: gray; text-align: center; font-size: 12px;">
+                                        <p style="color: gray; margin-top: 50px">幫幫我，我無法登入</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <p style="color: #54a5d4; margin-bottom: 0; font-size: 12px">或以QR碼登入</p>
+                                    <img src="imgs/qr.ioi.tw.png" style="width: 200px; border-radius: 10px; margin-top: 5px">
+                                    <p style="color: gray; margin-top: 13px; margin-bottom: 0; margin-left: 0 ;font-size: 12px; text-align: center">使用 <a href="#" style="color: gray">Steam 行動應用程式</a>來透過 QR 碼登入</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
